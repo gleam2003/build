@@ -83,6 +83,15 @@ case $BRANCH in
 
 	;;
 
+	abiuplayer)
+
+		KERNELPATCHDIR='rockchip64-'$BRANCH
+		KERNELBRANCH="branch:linux-5.7.y"
+		LINUXFAMILY=rockchip64
+		LINUXCONFIG='linux-rockchip64-'$BRANCH
+
+	;;
+
 esac
 
 prepare_boot_configuration()
