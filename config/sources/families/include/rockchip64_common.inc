@@ -83,7 +83,7 @@ case $BRANCH in
 
 	;;
 
-	abiuplayer)
+	abiuplayer_current)
 
 		KERNELPATCHDIR='rockchip64-'$BRANCH
 		KERNELBRANCH="branch:linux-5.7.y"
