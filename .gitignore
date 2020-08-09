@@ -20,3 +20,7 @@ ubuntu-*-cloudimg-console.log
 
 ### General annoyances ###
 .DS_Store
+config/templates/.vagrant/machines/default/virtualbox/private_key
+config/templates/.vagrant/machines/default/virtualbox/action_set_name
+config/templates/.vagrant/machines/default/virtualbox/id
+config/templates/.vagrant/machines/default/virtualbox/index_uuid
