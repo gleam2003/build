@@ -1,6 +1,7 @@
 ### Specific to building Armbian ###
 /.vagrant/
 config/templates/.vagrant/machines/
+config/templates/.vagrant/machines/default/virtualbox/action_set_name
 ubuntu-*-cloudimg-console.log
 
 ### to ignore changes in a working copy
