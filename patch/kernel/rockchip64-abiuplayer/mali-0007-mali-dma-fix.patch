@@ -1,46 +1,26 @@
-From b3a5052b1e0ca39ead7501a51cb963a103b20300 Mon Sep 17 00:00:00 2001
-From: gleam2003 <gleam2003@msn.com>
-Date: Sun, 9 Aug 2020 10:19:55 +0000
-Subject: [PATCH] fix-patch
-
-Signed-off-by: gleam2003 <gleam2003@msn.com>
----
- drivers/gpu/arm/midgard/mali_kbase_dma_fence.c | 4 ----
- drivers/gpu/arm/midgard/mali_kbase_dma_fence.h | 4 ----
- 2 files changed, 8 deletions(-)
-
 diff --git a/drivers/gpu/arm/midgard/mali_kbase_dma_fence.c b/drivers/gpu/arm/midgard/mali_kbase_dma_fence.c
-index 5f258e0a1..ee0650414 100644
+index 6a95900b3..42ebb36e4 100644
 --- a/drivers/gpu/arm/midgard/mali_kbase_dma_fence.c
 +++ b/drivers/gpu/arm/midgard/mali_kbase_dma_fence.c
-@@ -30,11 +30,7 @@
+@@ -30,7 +30,7 @@
  #include <linux/list.h>
  #include <linux/lockdep.h>
  #include <linux/mutex.h>
--#if KERNEL_VERSION(5, 4, 0) < LINUX_VERSION_CODE
 -#include <linux/reservation.h>
--#else
- #include <linux/dma-resv.h>
--#endif
++#include <linux/dma-resv.h>
  #include <linux/slab.h>
  #include <linux/spinlock.h>
  #include <linux/workqueue.h>
 diff --git a/drivers/gpu/arm/midgard/mali_kbase_dma_fence.h b/drivers/gpu/arm/midgard/mali_kbase_dma_fence.h
-index 329dbad72..fd02d15f8 100644
+index 2a4d6fcfa..c37683ba5 100644
 --- a/drivers/gpu/arm/midgard/mali_kbase_dma_fence.h
 +++ b/drivers/gpu/arm/midgard/mali_kbase_dma_fence.h
-@@ -26,11 +26,7 @@
+@@ -26,7 +26,7 @@
  #ifdef CONFIG_MALI_DMA_FENCE
  
  #include <linux/list.h>
--#if KERNEL_VERSION(5, 4, 0) < LINUX_VERSION_CODE
 -#include <linux/reservation.h>
--#else
- #include <linux/dma-resv.h>
--#endif
++#include <linux/dma-resv.h>
  #include <mali_kbase_fence.h>
  
  
--- 
-Created with Armbian build tools https://github.com/armbian/build
-
