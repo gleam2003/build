@@ -1,5 +1,6 @@
 ### Specific to building Armbian ###
 /.vagrant/
+/.vagrant/machines/default/virtualbox/
 ubuntu-*-cloudimg-console.log
 
 ### to ignore changes in a working copy
@@ -21,4 +22,3 @@ ubuntu-*-cloudimg-console.log
 
 ### General annoyances ###
 .DS_Store
-config/templates/.vagrant/machines/default/virtualbox/action_set_name
