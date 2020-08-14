@@ -1,6 +1,4 @@
 ### Specific to building Armbian ###
-/*.vagrant*/
-/.vagrant/
 /config/templates/.vagrant/
 /config/templates/*.vagrant*/
 ubuntu-*-cloudimg-console.log
@@ -18,8 +16,6 @@ ubuntu-*-cloudimg-console.log
 /.tmp/
 /output/
 /cache/
-/*userpatches*/
-/userpatches
 
 ### General annoyances ###
 .DS_Store
