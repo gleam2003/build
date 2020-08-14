@@ -6,9 +6,8 @@ Vagrant.require_version ">= 1.5"
 $provisioning_script = <<SCRIPT
 # use remote git version instead of sharing a copy from host to preserve proper file permissions
 # and prevent permission related issues for the temp directory
-git clone https://github.com/gleam2003/build /home/vagrant/armbian
+git clone --recurse-submodules https://github.com/gleam2003/build /home/vagrant/armbian
 mkdir -p /vagrant/output
-../../git submodule update --init
 ln -sf /vagrant/output /home/vagrant/armbian/output
 ln -sf /vagrant/userpatches /home/vagrant/armbian/userpatches
 SCRIPT
