@@ -1,6 +1,5 @@
 ### Specific to building Armbian ###
-/config/templates/.vagrant/
-/config/templates/*.vagrant*/
+/config/templates/.vagrant/**
 ubuntu-*-cloudimg-console.log
 
 ### to ignore changes in a working copy
