@@ -1,6 +1,8 @@
 ### Specific to building Armbian ###
+/*.vagrant*/
 /.vagrant/
-/.vagrant/machines/default/virtualbox/
+/config/templates/.vagrant/
+/config/templates/*.vagrant*/
 ubuntu-*-cloudimg-console.log
 
 ### to ignore changes in a working copy
@@ -18,7 +20,6 @@ ubuntu-*-cloudimg-console.log
 /cache/
 /*userpatches*/
 /userpatches
-/config/templates/.vagrant/machines
 
 ### General annoyances ###
 .DS_Store
