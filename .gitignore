@@ -1,5 +1,12 @@
 ### Specific to building Armbian ###
+<<<<<<< HEAD
 /config/templates/.vagrant/**
+=======
+/*.vagrant*/
+/.vagrant/
+/config/templates/.vagrant/
+/config/templates/*.vagrant*/
+>>>>>>> parent of 87acb6a8... userpatches add as submodule
 ubuntu-*-cloudimg-console.log
 
 ### to ignore changes in a working copy
@@ -15,6 +22,9 @@ ubuntu-*-cloudimg-console.log
 /.tmp/
 /output/
 /cache/
+/*userpatches*/
+/userpatches
+userpatches
 
 ### General annoyances ###
 .DS_Store
