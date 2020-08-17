@@ -23,8 +23,7 @@ ubuntu-*-cloudimg-console.log
 /output/
 /cache/
 /*userpatches*/
-/userpatches
-userpatches
+/userpatches/
 
 ### General annoyances ###
 .DS_Store
@@ -32,3 +31,5 @@ config/templates/.vagrant/rgloader/loader.rb
 config/templates/.vagrant/machines/default/virtualbox/index_uuid
 config/templates/.vagrant/machines/default/virtualbox/id
 config/templates/.vagrant/machines/default/virtualbox/action_set_name
+config/templates/.vagrant/machines/default/virtualbox/action_set_name
+userpatches
