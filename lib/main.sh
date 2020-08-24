@@ -257,7 +257,7 @@ if [[ -z $BRANCH ]]; then
 	[[ $KERNEL_TARGET == *current* ]] && options+=("current" "Recommended. Come with best support")
 	[[ $KERNEL_TARGET == *legacy* ]] && options+=("legacy" "Old stable / Legacy")
 	[[ $KERNEL_TARGET == *dev* && $EXPERT = yes ]] && options+=("dev" "\Z1Development version (@kernel.org)\Zn")
-	[[ $KERNEL_TARGET == *abiuplayer* ]] && options+=("abiuplayer" "ERA. EmulationStatio, Retroarch on Armbian")
+	[[ $KERNEL_TARGET == *abiuplayer* ]] && options+=("abiuplayer" "ERA. EmulationStation, Retroarch on Armbian")
 
 	# do not display selection dialog if only one kernel branch is available
 	if [[ "${#options[@]}" == 2 ]]; then
